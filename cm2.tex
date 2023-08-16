@@ -1,0 +1,97 @@
+\documentclass[a4paper, 11pt, twoside]{article}
+
+\usepackage{graphicx, psfrag, epsfig, amssymb, amsthm, float, booktabs, cite, url, datetime, parskip, fancyhdr}
+\usepackage[ruled, noline, linesnumbered]{algorithm2e}
+\usepackage[margin=1in]{geometry}
+\usepackage[labelfont=bf]{caption}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\footnotesize Sadri and Hossain}
+\fancyhead[RE,LO]{\footnotesize Coordinate Matrix Machine}
+\fancyfoot[CE,CO]{\thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\SetKwProg{Fn}{Function}{}{end}\SetKwFunction{GetCoordinates}{GetCoordinates}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH] \THEYEAR}
+
+\newcommand\correspondingauthor{\thanks{Corresponding author.}}
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+\monthyeardate
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Coordinate Matrix Machine: A Human-level Concept Learning to Classify Very Similar Documents}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+\author{Amin Sadri and M. Maruf Hossain\correspondingauthor \\
+{\small Machine Learning as a Service} \\
+{\small Intelligent Automation} \\
+{\small Enterprise Data and Intelligent Automation} \\
+%{\small Australia and New Zealand Banking Corporation} \\
+{\small \texttt{\{sadria, maruf.hossain\}@anz.com}}
+}
+
+\date{}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+\noindent Human-level concept learning argues that human usually learns new concepts from just a single example unlike the machine learning algorithms that typically require hundreds of samples to learn a single concept. Our brain subconsciously picks up the important features and learns in a richer way.
+\vspace*{6pt}
+
+\noindent \textbf{Contribution:} In this paper, we present a coordinate matrix-based approach that augments human intelligence to learn the structure of the document and use this information to classify the documents. Our approach only processes important features that are what a human considers for classification. Although the documents are more structured and contains very similar content to one another, only one sample is used per class similar to what a human needs to do similar task.
+\vspace*{6pt}
+
+\noindent \textbf{Advantage:} Our algorithm outperforms every popular vectoriser techniques in combination with traditional machine learning and most advanced deep learning models that rely on a larger number of elements to achieve good accuracy. The advantages of our algorithm are:
+\begin{enumerate}
+\item Better accuracy
+\item Faster computation
+\item Generic, expandable and extendable
+\item Explainable
+\item Robust against unbalanced classes
+\item Does not require large number of labelled data
+\end{enumerate}
+\vspace*{6pt}
+
+\noindent \textbf{Keywords:} Human-level, Concept Learning, Augmented Intelligence, Text Mining, Coordinate Matrix, Lazy Learning, Classification
+\end{abstract}
+
+\input{cm2_content}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{unsrt}
+\bibliography{cm2}
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf.tex'.

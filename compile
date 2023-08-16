@@ -1,0 +1,15 @@
+latex cm2.tex
+bibtex cm2
+latex cm2
+latex cm2
+latex cm2
+dvips cm2.dvi
+ps2pdf cm2.ps
+rm cm2.aux
+rm cm2.bbl
+rm cm2.blg
+rm cm2.log
+rm cm2.out
+rm cm2.xcp
+rm cm2.dvi
+rm cm2.ps
